@@ -95,14 +95,15 @@ def main():
     plt.ylabel("GINI Score")
     plt.xlim(1915, 2017)
     plt.ylim(0.2, 0.8)
+    ax1.minorticks_on()
 
     ax1.legend(fontsize=7.5)
 
     # Ask user if they wish to include 'US GINI Volatility per Year' graph
     include = input("\nInclude 'US GINI Volatility per Year' graph? (y/n)\n").lower()
     while (include != "y" and include != "yes" and include != "n" and include != "no"):
-        print("Please type either 'y' or 'n'.")
-        include = input("\nInclude 'US GINI Volatility per Year' graph? (y/n)\n").lower()
+        print("\nPlease type either 'y' or 'n'.")
+        include = input("Include 'US GINI Volatility per Year' graph? (y/n)\n").lower()
     if (include == "n" or include == "no"):
         plt.show()
     
