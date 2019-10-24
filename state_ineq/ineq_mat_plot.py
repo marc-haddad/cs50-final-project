@@ -26,9 +26,9 @@ def main():
         "ND": 35, "OH": 36, "OK": 37, "OR": 38, "PA": 39,
         "RI": 40, "SC": 41, "SD": 42, "TN": 43, "TX": 44,
         "UT": 45, "VT": 46, "VA": 47, "WA": 48, "WV": 49,
-        "WI": 50, "WY": 51
+        "WI": 50, "WY": 51,
         }
-
+    
     # Initialize plot1
     fig1, ax1 = plt.subplots()
 
@@ -85,11 +85,10 @@ def main():
 
     # Plot lines
     for valid_input in valid_user_inputs:
-        line_plot(all_df, states[valid_input])
-
-    plt.title("US State GINI Index Over Time\n1917-2015")
+        line_plot(all_df, states[valid_input])    
 
     # Tick and label formatting for plot1
+    plt.title("US State GINI Index Over Time\n1917-2015")
     plt.xticks(np.arange(1910, 2020, step=10), rotation=45)
     plt.yticks(np.arange(0.2, 0.85, step=.05))
     plt.ylabel("GINI Score")
@@ -98,6 +97,7 @@ def main():
     ax1.minorticks_on()
 
     ax1.legend(fontsize=7.5)
+    plt.savefig("Figure_A.png", dpi=450)
 
     # Ask user if they wish to include 'US GINI Volatility per Year' graph
     include = input("\nInclude 'US GINI Volatility per Year' graph? (y/n)\n").lower()
@@ -167,6 +167,7 @@ def main():
         plt.title("US GINI Volatility per Year\n1917-2015")
         plt.ylabel("Percent Change")
 
+        plt.savefig("Figure_B.png", dpi=450)
         plt.show()
 
 
