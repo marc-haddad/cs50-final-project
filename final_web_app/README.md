@@ -1,4 +1,4 @@
-# cs50-final-project
+# The Inequality Plot
 Final Project for CS50
 
 The Inequality Plot is a web app that visualizes the rise of income inequality in every state in America from 1917 to 2015.
