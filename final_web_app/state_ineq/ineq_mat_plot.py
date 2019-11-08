@@ -78,65 +78,6 @@ def graph(states_form):
     plt.tight_layout()
     return d3_plot(fig1, ax1)
 
-    # Initialize plot2
-    fig2, ax2 = plt.subplots()
-
-    # Recession rectangles for plot2
-    for sty, stm, ey, em in zip(
-            y_m_data["start_year"],
-            y_m_data["start_month_dec"],
-            y_m_data["end_year"],
-            y_m_data["end_month_dec"]):
-
-        stym = sty + stm
-        eym = ey + em
-        dif = eym - stym
-        rectangle = patches.Rectangle((stym, -10), (dif), 20, fc='grey', alpha=.45)
-        ax2.add_patch(rectangle)
-    rectangle.set_label("Recessions")
-
-    # Change in Gini
-    delt_gini_us = []
-    delt_year_us = []
-    prev_gini = 0
-    for gini, year in zip(us_df["Gini"], us_df["Year"]):
-        if gini == us_df["Gini"][0]:
-            prev_gini = gini
-            continue
-        gini_perc_change = (gini - prev_gini) * 100
-        delt_gini_us.append(gini_perc_change)
-        delt_year_us.append(year)
-        prev_gini = gini
-
-    # Tick formatting for plot2
-    plt.xticks(np.arange(1917, 2027, step=10), rotation=45)
-    plt.yticks(np.arange(-15, 15, step=1))
-    ax2.tick_params(axis="y", which='major', labelsize=9)
-    ax2.yaxis.set_major_formatter(ticker.StrMethodFormatter("{x:.1f}%"))
-
-    # Plot bars
-    bars = ax2.bar(delt_year_us, delt_gini_us)
-    i = 0
-    j = 0
-    for bar, val in zip(bars, delt_gini_us):
-        if val > 0:
-            bar.set(edgecolor="red", facecolor="salmon")
-            if i == 0:
-                bar.set_label("Increase in Inequality")
-                i += 1
-        else:
-            bar.set(edgecolor="green", facecolor="lightgreen")
-            if j == 0:
-                bar.set_label("Decrease in Inequality")
-                j += 1
-
-    plt.ylim(-10, 10)
-    ax2.legend(fontsize=7.5)
-
-    axes.Axes.axhline(ax2, color="k", linestyle="solid", linewidth=.7)
-    plt.title("US GINI Volatility per Year\n1917-2015")
-    plt.ylabel("Percent Change")
-
 
 def line_plot(df, n):
     if n > 51 or n < 0:
