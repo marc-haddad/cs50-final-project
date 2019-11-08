@@ -27,10 +27,6 @@ def after_request(response):
     response.headers["Pragma"] = "no-cache"
     return response
 
-# Custom filter
-
-app.add_template_global(name=lookup, f=lookup)
-
 
 # Configure session to use filesystem (instead of signed cookies)
 app.config["SESSION_FILE_DIR"] = mkdtemp()
@@ -69,13 +65,8 @@ def selection():
             return apology("How did you even get this error?!")
 
         else:
-            # Checkpoint: need to slice string into 2 letter pieces
-            print(states_form)
-            print(type(states_form))
             for state in states_form:
                 D3_LIST.append(state)
-            print(D3_LIST)
-
             return redirect('/')
 
 
