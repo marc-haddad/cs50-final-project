@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Custom Selections
+{% endblock %}
+
+{% block main %}
+    <div class="p-3 bg-dark text-white">
+        <h3><span class="blue-tit">Select States to Plot</span></h3>
+        <form action="/selection" method="post" bg="dark">
+            <select class="selectpicker" name="states" data-style="btn-primary" data-container="body" data-width="auto" data-selected-text-format="count" multiple title="(Max. 10)" data-max-options="10" data-live-search="true">
+                <option value="US" data-tokens="US">United States (Average)</option>
+                <option value="AL" data-tokens="AL">Alabama</option>
+                <option value="AK" data-tokens="AK">Alaska</option>
+                <option value="AZ" data-tokens="AZ">Arizona</option>
+                <option value="AR" data-tokens="AR">Arkansas</option>
+                <option value="CA" data-tokens="CA">California</option>
+                <option value="CO" data-tokens="CO">Colorado</option>
+                <option value="CT" data-tokens="CT">Connecticut</option>
+                <option value="DE" data-tokens="DE">Delaware</option>
+                <option value="DC" data-tokens="DC">District of Columbia</option>
+                <option value="FL" data-tokens="FL">Florida</option>
+                <option value="GA" data-tokens="GA">Georgia</option>
+                <option value="HI" data-tokens="HI">Hawaii</option>
+                <option value="ID" data-tokens="ID">Idaho</option>
+                <option value="IL" data-tokens="IL">Illinois</option>
+                <option value="IN" data-tokens="IN">Indiana</option>
+                <option value="IA" data-tokens="IA">Iowa</option>
+                <option value="KS" data-tokens="KS">Kansas</option>
+                <option value="KY" data-tokens="KY">Kentucky</option>
+                <option value="LA" data-tokens="LA">Louisiana</option>
+                <option value="ME" data-tokens="ME">Maine</option>
+                <option value="MD" data-tokens="MD">Maryland</option>
+                <option value="MA" data-tokens="MA">Massechusetts</option>
+                <option value="MI" data-tokens="MI">Michigan</option>
+                <option value="MN" data-tokens="MN">Minnesota</option>
+                <option value="MS" data-tokens="MS">Mississippi</option>
+                <option value="MO" data-tokens="MO">Missouri</option>
+                <option value="MT" data-tokens="MT">Montana</option>
+                <option value="NE" data-tokens="NE">Nebraska</option>
+                <option value="NV" data-tokens="NV">Nevada</option>
+                <option value="NH" data-tokens="NH">New Hampshire</option>
+                <option value="NJ" data-tokens="NJ">New Jersey</option>
+                <option value="NM" data-tokens="NM">New Mexico</option>
+                <option value="NY" data-tokens="NY">New York</option>
+                <option value="NC" data-tokens="NC">North Carolina</option>
+                <option value="ND" data-tokens="ND">North Dakota</option>
+                <option value="OH" data-tokens="OH">Ohio</option>
+                <option value="OK" data-tokens="OK">Oklahoma</option>
+                <option value="OR" data-tokens="OR">Oregon</option>
+                <option value="PA" data-tokens="PA">Pennsylvania</option>
+                <option value="RI" data-tokens="RI">Rhode Island</option>
+                <option value="SC" data-tokens="SC">South Carolina</option>
+                <option value="SD" data-tokens="SD">South Dakota</option>
+                <option value="TN" data-tokens="TN">Tennessee</option>
+                <option value="TX" data-tokens="TX">Texas</option>
+                <option value="UT" data-tokens="UT">Utah</option>
+                <option value="VT" data-tokens="VT">Vermont</option>
+                <option value="VA" data-tokens="VA">Virginia</option>
+                <option value="WA" data-tokens="WA">Washington</option>
+                <option value="WV" data-tokens="WV">West Virginia</option>
+                <option value="WI" data-tokens="WI">Wisconsin</option>
+                <option value="WY" data-tokens="WY">Wyoming</option>
+            </select>
+            <button class="btn btn-danger" type="submit">Plot</button>
+        </form>
+    </div>
+{% endblock %}

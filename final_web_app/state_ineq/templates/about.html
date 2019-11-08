@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    About
+{% endblock %}
+
+{% block main %}
+<div class="row p-3">
+    <div class="column text-white text-center bg-dark col-6">
+        <h3 class="blue-tit">Me</h3>
+        <p class="text-justify p-3">My name is Marc Haddad and I am an aspiring data scientist. My interests include data analysis, trend prediction, linear programming, and data visualization and presentation. I graduated from the University of North Carolina at Chapel Hill with a degree in Management and Society.</p>
+        <p class="text-justify p-3">I hope to merge my academic background with my new-found passion for computer programming into a career that improves the lives of workers and promotes a healthy and productive corporate culture.</p>
+    </div>
+    <div class="column text-center bg-light col-6">
+        <h3 class="blue-tit">The Project</h3>
+        <p class="text-justify p-3">The Inequality Plot is a project that visualizes the rise of income inequality in every state in America from 1917 to 2015. The idea for the project was inspired by the book "Good Jobs, Bad Jobs" by Arne L. Kalleberg. The book centers on the growth of inequality in the United States, and contextualizes the changes as a result of, in part, stagnating wage growth for middle and working-class Americans and a larger proportion of income going to those within the wealthiest strata of society.</p>
+        <p class="text-justify p-3">I wanted to create an interactive plot that can easily compare the levels of income inequality between different states through the <a href="https://www.investopedia.com/terms/g/gini-index.asp">Gini index.</a> Though depicting levels of inequality solely through the Gini metric is generally not satisfactory in fully representing income inequality in the United States, it is sufficient for my purpose of showing the general trend of inequality.</p>
+    </div>
+</div>
+{% endblock %}

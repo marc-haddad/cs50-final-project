@@ -1,0 +1,104 @@
+nav .navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;
+    text-align: center;
+    font-family: "Courier New";
+
+
+}
+
+nav .navbar-brand .emphasize
+{
+    font-size: xx-large;
+    text-align: center;
+    border-bottom: 2px dotted red;
+    font-weight: bold;
+
+}
+
+/* colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+main .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main
+{
+    /* scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* center contents */
+    text-align: center;
+}
+
+main img
+{
+    /* constrain images on small screens */
+    max-width: 100%;
+}
+
+main .header
+{
+    font-family: "Verdana";
+}
+
+main .blue-tit
+{
+    font-size: xx-large;
+    text-align: center;
+    font-family: "Courier New";
+
+}
+
+main .plt-tit
+{
+    font-size: x-large;
+    text-align: center;
+    font-family: "Courier New";
+}
+
+/* hover code courtesy of stackoverflow user "jme11" source: https://stackoverflow.com/questions/25923623/change-hover-color-on-a-button-with-bootstrap-customization */
+nav .nav-item:hover, .nav-item:focus, .nav-item:active, .nav-item.active, .open>.dropdown-toggle.nav-item
+{
+    color: #fff;
+    background-color: #ea433b;
+    border-color: #285e8e; /*set the color you want here*/
+}
+.svg-container
+{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    vertical-align: top;
+    overflow: hidden;
+}
+.svg-content
+{
+    display: inline-block;
+    position: absolute;
+    width: 2000%;
+    top: 0;
+    left: 0;
+}

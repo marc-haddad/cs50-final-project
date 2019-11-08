@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Figure
+{% endblock %}
+
+{% block main %}
+    <div class="p-3 text-white text-center">
+        <h3 class="bg-dark"><span class="plt-tit">US State GINI Index Over Time<p>1917-2015</p></span></h3>
+    </div>
+    <div id="container" class="svg-container">
+        {{ custom_graph|safe }}
+    </div>
+    <footer class="small text-center text-muted">
+        Data provided for free by <a href="https://data.world/vikjam/usa-state-inequality">Mark W. Frank </a>(Dataset constructed by Vikram Jambulapati). Visit <a href="http://www.shsu.edu/eco_mwf/inequality.html">Mark's website</a> for more info.
+    </footer>
+{% endblock %}
