@@ -1,5 +1,4 @@
 # The Inequality Plot
-Final Project for CS50
 
 The Inequality Plot is a web app that visualizes the rise of income inequality in every state in America from 1917 to 2015.
 The idea for the project was inspired by the book "Good Jobs, Bad Jobs" by Arne L. Kalleberg. The book centers on the growth of inequality in the United States, and contextualizes the changes as a result of, in part, stagnating wage growth for middle and working-class Americans
