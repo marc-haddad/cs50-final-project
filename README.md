@@ -23,3 +23,19 @@ Contains the final project.
 
 ## Selection page prompting users to select up to 10 US States
 ![Selection](screenshots/4_selection.png)
+
+
+## Custom search capability
+![Custom Search](screenshots/5_custom_search.png)
+
+
+## Average of all States included
+![US average](screenshots/6_average_US.png)
+
+
+## Custom plot display
+![Plot](screenshots/7_plot.png)
+
+
+## 'About' page
+![About page](screenshots/8_about.png)
