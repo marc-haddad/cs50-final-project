@@ -10,4 +10,4 @@ Contains the final project.
 # Final Web App Walkthrough
 
 *Initial landing page*
-![screenshots/
+![screenshots/Screen Shot 2020-03-15 at 7.35.45 PM.png]
