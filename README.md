@@ -1,8 +1,11 @@
 # Folders for the Inequality Plot Project
 
-## Initial Plot Script
+### Initial Plot Script
 Contains the initial python template to be converted to a web app.
 
-## Final Web App
+### Final Web App
 Contains the final project.
+
+
+# Final Web App Walkthrough
 
