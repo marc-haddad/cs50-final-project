@@ -11,3 +11,6 @@ Contains the final project.
 
 *Initial landing page*
 ![Landing Page](screenshots/1_landing_page.png)
+
+*Registration page*
+![Registration](screenshots/2_registration.png)
