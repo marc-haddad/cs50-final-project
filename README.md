@@ -9,3 +9,5 @@ Contains the final project.
 
 # Final Web App Walkthrough
 
+*Initial landing page*
+![screenshots/
